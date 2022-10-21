@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+span {
+    background: url("https://cdn3.iconfinder.com/data/icons/emoji-1-4/64/_love_heart_smiley-512.png");
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: animate 6s linear;
+    
+    
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+        
+       
+    100% {
+        transform: translate(-50%, -2000%);
+        opacity: 0;
+        filter: hue-rotate(720degre);
+        
+    }
+}
+@media only screen and (max-width: 600px) {
+    [class*="col-12"] {
+        width: 100%;
+    }
+  
+}
+
+/*div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+  }
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }*/
+
